@@ -1,16 +1,27 @@
-import Nav from "../components/Nav/Nav";
-
 const Home = () => {
   return (
     <main>
-      <Nav />
-
       <div className="flex h-screen">
         <section className=" w-3/6 pt-10  flex flex-col justify-between">
           <div className=" mx-32">
             <h1 className="font-bold text-5xl">
-              Hi! I Am <br />
-              Las Zozk
+              <p className="hover:animate-bounce inline-block">H</p>
+              <p className="hover:animate-bounce inline-block">i</p>
+              <p className="hover:animate-bounce inline-block">!</p>
+              <p className="inline"> </p>
+              <p className="hover:animate-bounce inline-block">I</p>
+              <p className="inline"> </p>
+              <p className="hover:animate-bounce inline-block">A</p>
+              <p className="hover:animate-bounce inline-block">M</p>
+              <br />
+              <p className="hover:animate-bounce inline-block">L</p>
+              <p className="hover:animate-bounce inline-block">a</p>
+              <p className="hover:animate-bounce inline-block">s</p>
+              <p className="inline"> </p>
+              <p className="hover:animate-bounce inline-block">Z</p>
+              <p className="hover:animate-bounce inline-block">o</p>
+              <p className="hover:animate-bounce inline-block">z</p>
+              <p className="hover:animate-bounce inline-block">k</p>
             </h1>
             <h3 className="pt-10">
               I am a Native IOS/Flutter developer and a backend developer with a
@@ -34,7 +45,7 @@ const Home = () => {
           </div>
         </section>
         <section className=" bg-black w-3/6 flex justify-center">
-          <div className=" bg-white w-96 h-96 rounded-full m-auto"></div>
+          <div className=" bg-white w-96 h-96 rounded-full m-auto bg-clip-content  flex "></div>
         </section>
       </div>
     </main>

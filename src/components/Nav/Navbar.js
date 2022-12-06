@@ -1,4 +1,6 @@
-const Nav = () => {
+import { Link } from "react-router-dom";
+
+const Navbar = () => {
   return (
     <nav className="px-32">
       <div className=" flex justify-between   py-5">
@@ -6,26 +8,26 @@ const Nav = () => {
         <div>
           <ul className=" flex justify-center ">
             <li className=" px-2 hover:text-teal-500">
-              <a href="/" className=" text-2xl">
+              <Link to="/" className="text-2xl">
                 Home
-              </a>
+              </Link>
             </li>
             <li className=" px-2 hover:text-teal-500">
-              <a href="#" className=" text-2xl">
+              <Link to="/about" className="text-2xl">
                 About
-              </a>
+              </Link>
             </li>
             <li className=" px-2 hover:text-teal-500">
-              <a href="#" className=" text-2xl">
+              <Link to="/works" className="text-2xl">
                 Works
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
         <div className=" border-2 border-gray-500 hover:border-teal-500">
-          <a href="#" className="px-4 py-3 text-2xl">
+          <Link to="/contact" className="px-4 py-3 text-2xl">
             Contact Me
-          </a>
+          </Link>
         </div>
       </div>
       <hr />
@@ -33,4 +35,4 @@ const Nav = () => {
   );
 };
 
-export default Nav;
+export default Navbar;
